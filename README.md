@@ -1,2 +1,3 @@
-# weblab1
-not only 1
+# weblab
+
+HTML+CSS
