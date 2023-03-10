@@ -2,14 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <header class = "header">
-        <img class="background-img" src="icons/background.svg" alt="background" />
-        <h2 class = "logo-text">Trello</h2>
+    <div class="header-line">
+        <h2 class = "logo-text">Treloo</h2>
         <nav class="header-nav">
             <a class="header-link" href="#">Review</a>
             <a class="header-link" href="#">Tips</a>
@@ -17,44 +21,66 @@
             <a class="header-link" href="#">Blog</a>
             <a class="header-link" href="#">Blog</a>
         </nav>
-        <h1 class = "title">Discover Your Life, Travel <br> Where You Want</h1>
-        <h3 class = "tittle-description">Would you explore natur paradise in the world, let's find the best <br> destination in world with us.</h3>
+    </div>
+    <header class = "header">
+        <!-- <img class="background-img" src="icons/background.svg" alt="background" /> -->
+        <div class="title-elements">
+            <h1 class = "title">Discover Your Life, Travel <br> Where You Want</h1>
+            <h3 class = "tittle-description">Would you explore natur paradise in the world, let's find the best <br> destination in world with us.</h3>
+        </div>
         
     </header>
     <main>
         <section class = "choose-vacation-section">
             <div class="user-choice">
-                <button class="flight-button">
+                <button class="choice-button flight-button">
                     <img class="plane-icon" src="./icons/airplane_mode On.svg" alt="plane" />
-                    <h4 class = "button-flight-text">Flight</h4>
+                    <h4 class = "button-choice-text">Flight</h4>
                 </button>
-                <button class="hotel-button">
+                <button class="choice-button hotel-button">
                     <img class="hotel-icon" src="./icons/hotel_star.svg" alt="hotel" />
-                    <h4 class = "button-hotel-text">Hotel</h4>
+                    <h4 class = "button-choice-text">Hotel</h4>
                 </button>
             </div>
             <div class="choice-container">
-                <div class="location-choice">
-                    <h4 class = "location-to-text">Living from</h4>
-                    <input class = "input-field" type="text" id="fname" name="fname">
-                    <img class="elipse-icon" src="./icons/hole_elipse.svg" alt="elipse" />
-                    <img class="grey-icon" src="./icons/airplane_mode_n.svg" alt="plane" />
-                    <h4 class = "location-to-text">Going to</h4>
-                    <input class = "input-field" type="text" id="fname" name="fname">
+                <div class="location-choice choice-detail-container">
+                    <div class="input-form-container">
+                        <h4 class = "location-to-text">Living from</h4>
+                        <input class = "input-field" placeholder = "Enter City" type="text" id="fname" name="fname">
+                    </div>
+                    <div class="icon-container">
+                        <img class="elipse-icon" src="./icons/hole_elipse.svg" alt="elipse" />
+                        <img class="grey-icon" src="./icons/airplane_mode_n.svg" alt="plane" />
+                    </div>
+                    <div class="input-form-container">
+                        <h4 class = "location-to-text">Going to</h4>
+                        <input class = "input-field" placeholder = "Enter City" type="text" id="fname" name="fname">
+                    </div>
                 </div>
-                <div class="date-choice">
-                    <h4 class = "date-flight-text">Leave</h4>
-                    <img class="plane-icon" src="./icons/airplane_mode_on.svg" alt="plane" />
-                    <input class = "input-field" type="text" id="fname" name="fname">
-                    <img class="elipse-icon" src="./icons/hole_elipse.svg" alt="elipse" />
-                    <img class="grey-icon" src="./icons/planner.svg" alt="planner" />
-                    <h4 class="date-flight-text">Return</h4>
-                    <img class="plane-icon" src="./icons/airplane_mode_off.svg" alt="plane" />
-                    <input class = "input-field" type="text" id="fname" name="fname">
+                <div class="date-choice choice-detail-container">
+                    <div class="input-form-container">
+                        <div class="text-and-icon">
+                            <h4 class = "date-flight-text">Leave</h4>
+                            <img class="plane-icon" src="./icons/airplane_mode_on.svg" alt="plane" />
+                        </div>
+                        <input class = "input-field" placeholder = "Enter Date" type="date" id="fname" name="fname">
+                    </div>
+                    <div class="icon-container">
+                        <img class="elipse-icon" src="./icons/hole_elipse.svg" alt="elipse" />
+                        <img class="grey-icon" src="./icons/planner.svg" alt="planner" />
+                    </div>
+                    <div class="input-form-container">
+                        <div class="text-and-icon">
+                            <h4 class="date-flight-text">Return</h4>
+                            <img class="plane-icon" src="./icons/airplane_mode_off.svg" alt="plane" />
+                        </div>
+                        <input class = "input-field" placeholder = "Enter Date" type="date" id="fname" name="fname">
+                    </div>
                 </div>
                 <div class = "search">
-                    <button class = "search-button"></button>
-                    <img class="search-icon" src="./icons/icon_search.svg" alt="search" />
+                    <button class = "search-button">
+                        <img class="search-icon" src="./icons/icon_search.svg" alt="search"/>
+                    </button>
                 </div>
             </div>
         </section>
@@ -65,131 +91,184 @@
                 <a class="section-link" href="#">Couple</a>
                 <a class="section-link" href="#">Family</a>
             </nav>
-            <div class = "offer">
-                <h4 class = "vert-text">14 FEB 2022</h4>
-                <img class="offer-img" src="./icons/img1.svg" alt="offer img" />
-                <a class="vacation-type" href="#">Relax</a>
-                <h5 class = "duration">3 Days, 3 Nights</h5>
-                <h3 class = "location-name">Logo Sea</h3>
-                <h3 class = "offer-price">700$</h3>
-                <h4 class = "person-text">/Person</h4>
-                <button class = "offer-button">Book Now</button>
-            </div>
-            <div class = "offer">
-                <h4 class = "vert-text">18 JUNE 2022</h4>
-                <img class="offer-img" src="./icons/img2.svg" alt="offer img" />
-                <a class="vacation-type" href="#">Adventure</a>
-                <h5 class = "duration">4 Days, 3 Nights</h5>
-                <h3 class = "location-name">Ansgar Scheffold</h3>
-                <h3 class = "offer-price">400$</h3>
-                <h4 class = "person-text">/Person</h4>
-                <button class = "offer-button">Book Now</button>
-            </div>
-            <div class = "offer">
-                <h4 class = "vert-text">22 DEC 2022</h4>
-                <img class="offer-img" src="./icons/img3.svg" alt="offer img" />
-                <a class="vacation-type" href="#">Relax</a>
-                <h5 class = "duration">7 Days, 6 Nights</h5>
-                <h3 class = "location-name">Lona X</h3>
-                <h3 class = "offer-price">340$</h3>
-                <h4 class = "person-text">/Person</h4>
-                <button class = "offer-button">Book Now</button>
+            <div class="offers-container">
+                <div class = "offer">
+                    <div class="text-image-container">
+                        <img class="offer-img" src="./icons/img1.svg" alt="offer img" />
+                        <h4 class = "upside-down-text">14 FEB 2022</h4>
+                    </div>
+                    <div class="type-and-duration-container">
+                        <a class="vacation-type relax" href="#">Relax</a>
+                        <h5 class = "duration">3 Days, 3 Nights</h5>
+                    </div>
+                    <h3 class = "location-name">Logo Sea</h3>
+                    <div class="price-and-button-container">
+                        <h3 class = "offer-price">700$<span class = "person-text">/Person</span></h3>
+                        <button class = "offer-button">Book Now</button>
+                    </div>
+                </div>
+                <div class = "offer">
+                    <div class="text-image-container">
+                        <img class="offer-img" src="./icons/img2.svg" alt="offer img" />
+                        <h4 class = "upside-down-text">18 JUN 2022</h4>
+                    </div>
+                    <div class="type-and-duration-container">
+                        <a class="vacation-type adventure" href="#">Adventure</a>
+                        <h5 class = "duration">4 Days, 3 Nights</h5>
+                    </div>
+                    <h3 class = "location-name">Ansgar Scheffold</h3>
+                    <div class="price-and-button-container">
+                        <h3 class = "offer-price">400$<span class = "person-text">/Person</span></h3>
+                        <button class = "offer-button">Book Now</button>
+                    </div>
+                </div>
+                <div class = "offer">
+                    <div class="text-image-container">
+                        <img class="offer-img" src="./icons/img3.svg" alt="offer img" />
+                        <h4 class = "upside-down-text">22 DEC 2022</h4>
+                    </div>
+                    <div class="type-and-duration-container">
+                        <a class="vacation-type relax" href="#">Relax</a>
+                        <h5 class = "duration">7 Days, 6 Nights</h5>
+                    </div>
+                    <h3 class = "location-name">Lona X</h3>
+                    <div class="price-and-button-container">
+                        <h3 class = "offer-price">340$<span class = "person-text">/Person</span></h3>
+                        <button class = "offer-button">Book Now</button>
+                    </div>
+                </div>
             </div>
         </section>
         <section class = "info-section">
             <div class = "adv-details">
-                <h2 class = "numbers-info">300+</h2>
-                <h3 class = "adv_text-info">DESTINATIONS</h3>
+                <h2 class = "numbers-info group-1-3 info-1">300+<br><span class = "adv-text-info">DESTINATIONS</span></h2>
+                <img class="info-photo" src="./icons/img4.svg" alt="beautiful photo" />
+                
+                <h2 class = "numbers-info info-2">5000+<br><span class = "adv-text-info">TOURISTS</span></h2>
+                <h2 class = "numbers-info group-1-3 info-3">150+<br><span class = "adv-text-info">HOTELS</span></h2>
             </div>
-            <img class="info-photo" src="./icons/img4.svg" alt="beautiful photo" />
-            <div class = "adv-details">
-                <h2 class = "numbers-info">5000+</h2>
-                <h3 class = "adv_text-info">TOURISTS</h3>
+            <div class="text-adv">
+                <h2 class = "info-title">Travel Any Corner of <br>The World With Us</h2>
+                <h4 class = "info-title-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ipsa, aliquid et cum impedit debitis neque quas suscipit incidunt error, saepe deserunt nesciunt molestias, asperiores aperiam dolor ipsum earum non.<br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, asperiores?</h4>
+                <button class = "contact-button">Contact Us</button>
             </div>
-            <div class = "adv-details">
-                <h2 class = "numbers-info">150+</h2>
-                <h3 class = "adv_text-info">HOTELS</h3>
-            </div>
-            <h2 class = "info-title">Travel Any Corner of <br>The World With Us</h2>
-            <h4 class = "info-title-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quasi ea <br>cumque neque mollitia, 
-                quam fuga doloremque laudantium iste minima nihil eos,<br> libero ad atque cum esse est. A, rem.</h4>
-            <button class = "contact-button">Contact Us</button>
         </section>
         <section class="destination-section">
             <h2 class = "section-title">Recommended Destination</h2>
-            <nav class="section-nav">
-                <a class="section-link" href="#">Popular</a>
-                <a class="section-link" href="#">Adventure</a>
-                <a class="section-link" href="#">Beath</a>
+            <nav class="destination-section-nav">
+                <a class="destination-section-link" href="#">Popular</a>
+                <a class="destination-section-link" href="#">Adventure</a>
+                <a class="destination-section-link" href="#">Beath</a>
             </nav>
-            <img class="star-icon" src="./icons/star.svg" alt="plane" />
-            <h4 class = "star-mark">0.0</h4>
-            <img class="recommended-img" src="./icons/img5.svg" alt="plane" />
-            <h3 class = "location-name-text">Kina Mountain</h3>
-            <img class="location-icon" src="./icons/location.svg" alt="plane" />
-            <h4 class = "location">Cambodia</h4>
-            <img class="star-icon" src="./icons/star.svg" alt="plane" />
-            <h4 class = "star-mark">0.0</h4>
-            <img class="recommended-img" src="./icons/img6.svg" alt="plane" />
-            <h3 class = "location-name-text">Kina Mountain</h3>
-            <img class="location-icon" src="./icons/location.svg" alt="plane" />
-            <h4 class = "location">Cambodia</h4>
-            <img class="star-icon" src="./icons/star.svg" alt="plane" />
-            <h4 class = "star-mark">0.0</h4>
-            <img class="recommended-img" src="./icons/img7.svg" alt="plane" />
-            <h3 class = "location-name-text">Kina Mountain</h3>
-            <img class="location-icon" src="./icons/location.svg" alt="plane" />
-            <h4 class = "location">Cambodia</h4>
-            <img class="star-icon" src="./icons/star.svg" alt="plane" />
-            <h4 class = "star-mark">0.0</h4>
-            <img class="recommended-img" src="./icons/img8.svg" alt="plane" />
-            <h3 class = "location-name-text">Kina Mountain</h3>
-            <img class="location-icon" src="./icons/location.svg" alt="plane" />
-            <h4 class = "location">Cambodia</h4>
+            <div class="recommended-offers-container">
+                <div class="rec-offer">
+                    <img class="recommended-img" src="./icons/img5.svg" alt="plane" />
+                    <div class="mark">
+                        <img class="star-icon" src="./icons/star.svg" alt="plane" />
+                        <h4 class = "star-mark">3.4</h4>
+                    </div>
+                    <h3 class = "location-name-text">Kina Mountain</h3>
+                    <div class="location-container">
+                        <img class="location-icon" src="./icons/location.svg" alt="plane" />
+                        <h4 class = "location">Cambodia</h4>
+                    </div>
+                </div>
+                <div class="rec-offer">
+                    <img class="recommended-img" src="./icons/img6.svg" alt="plane" />
+                    <div class="mark">
+                        <img class="star-icon" src="./icons/star.svg" alt="plane" />
+                        <h4 class = "star-mark">4.5</h4>
+                    </div>
+                    <h3 class = "location-name-text">Kina Mountain</h3>
+                    <div class="location-container">
+                        <img class="location-icon" src="./icons/location.svg" alt="plane" />
+                        <h4 class = "location">Cambodia</h4>
+                    </div>
+                </div>
+                <div class="rec-offer">
+                    <img class="recommended-img" src="./icons/img7.svg" alt="plane" />
+                    <div class="mark">
+                        <img class="star-icon" src="./icons/star.svg" alt="plane" />
+                        <h4 class = "star-mark">4.2</h4>
+                    </div>
+                    <h3 class = "location-name-text">Kina Mountain</h3>
+                    <div class="location-container">
+                        <img class="location-icon" src="./icons/location.svg" alt="plane" />
+                        <h4 class = "location">Cambodia</h4>
+                    </div>
+                </div>
+                <div class="rec-offer">
+                    <img class="recommended-img" src="./icons/img8.svg" alt="plane" />
+                    <div class="mark">
+                        <img class="star-icon" src="./icons/star.svg" alt="plane" />
+                        <h4 class = "star-mark">3.5</h4>
+                    </div>
+                    <h3 class = "location-name-text">Kina Mountain</h3>
+                    <div class="location-container">
+                        <img class="location-icon" src="./icons/location.svg" alt="plane" />
+                        <h4 class = "location">Cambodia</h4>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class = "response-section">
-            <div class = "response">
-                <img class="quotes-icon" src="./icons/quote.svg" alt="quotes" />
-                <h4 class = "response-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
-                    Ex officia aliquid nisi tenetur nesciunt quae mollitia<br>
-                    consequatur nemo. Adipisci dolores saepe perspiciatis,<br>
-                    placeat nulla sint reprehenderit tempora accusamus<br>
-                    fugiat corporis?</h4>
-                <h4 class = "author">-Vand D</h4>
-                <h4 class = "company-text">Happy Treloo</h4>
-                <img class="star-icon" src="./icons/star.svg" alt="star" />
-                <h5 class = "star-mark">0.0</h5>
-                <img class="person-photo" src="./icons/photo1.svg" alt="person" />
+            <div class="response-blocks-container">
+                <div class = "response">
+                    <img class="quotes-icon" src="./icons/quote.svg" alt="quotes" />
+                    <h4 class = "response-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Ex officia aliquid nisi tenetur nesciunt quae mollitia
+                        consequatur nemo. Adipisci dolores saepe perspiciatis.<br>
+                    <h4 class = "author">-Vand D</h4>
+                    <h4 class = "company-text">Happy Treloo</h4>
+                    <div class="person-photo-container">
+                        <img class="person-photo" src="./icons/photo1.svg" alt="person" />
+                        <div class="mark-person">
+                            <img class="star-icon" src="./icons/star.svg" alt="plane" />
+                            <h4 class = "star-mark">4.5</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class = "response">
+                    <img class="quotes-icon" src="./icons/quote.svg" alt="quotes" />
+                    <h4 class = "response-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Ex officia aliquid nisi tenetur nesciunt quae mollitia
+                        consequatur nemo. Adipisci dolores saepe perspiciatis.<br>
+                    <h4 class = "author">-Tru Vio</h4>
+                    <h4 class = "company-text">Happy Treloo</h4>
+                    <div class="person-photo-container">
+                        <img class="person-photo" src="./icons/photo2.svg" alt="person" />
+                        <div class="mark-person">
+                            <img class="star-icon" src="./icons/star.svg" alt="plane" />
+                            <h4 class = "star-mark">4.9</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img class="quotes-icon" src="./icons/quote.svg" alt="quotes" />
-                <h4 class = "response-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
-                    Ex officia aliquid nisi tenetur nesciunt quae mollitia<br>
-                    consequatur nemo. Adipisci dolores saepe perspiciatis,<br>
-                    placeat nulla sint reprehenderit tempora accusamus<br>
-                    fugiat corporis?</h4>
-                <h4 class = "author">-Tru Vio</h4>
-                <h4 class = "company-text">Happy Treloo</h4>
-                <img class="star-icon" src="./icons/star.svg" alt="star" />
-                <h5 class = "star-mark">0.0</h5>
-                <img class="person-photo" src="./icons/photo2.svg" alt="person" />
+            <div class="arrows">
+                <button class = "arrow-button">
+                    <img class="arrow-icon" src="./icons/vector1.svg" alt="arrow" />
+                </button>
+                <button class = "arrow-button">
+                    <img class="arrow-icon" src="./icons/vector.svg" alt="arrow" />
+                </button>
             </div>
-            <img class="arrow-icon" src="./icons/vector1.svg" alt="arrow" />
-            <img class="arrow-icon" src="./icons/vector.svg" alt="arrow" />
         </section>
     </main>
     <footer>
-        <img class="footer-img" src="./icons/space.svg" alt="footer img" />
-        <h2 class = "footer-text">Don't Miss The 50% Discount if<br>You register Today</h2>
-        <button class = "register-button">Register Today</button>
-        <h4 class = "footer-rights">© 2022 Treloo LLC - All right reserved.</h4>
-        <nav class="footer-nav">
-            <a class="footer-link" href="#">Review</a>
-            <a class="footer-link" href="#">Tips</a>
-            <a class="footer-link" href="#">Alerts</a>
-            <a class="footer-link" href="#">Blog</a>
-            <a class="footer-link" href="#">Blog</a>
-        </nav>
+        <div class="register-container">
+            <h2 class = "footer-text">Don't Miss The 50% Discount if<br>You register Today</h2>
+            <button class = "register-button">Register Today</button>
+        </div>
+        <div class="footer-end">
+            <h4 class = "footer-rights">© 2022 Treloo LLC - All right reserved.</h4>
+            <nav class="footer-nav">
+                <a class="footer-link" href="#">Review</a>
+                <a class="footer-link" href="#">Tips</a>
+                <a class="footer-link" href="#">Alerts</a>
+                <a class="footer-link" href="#">Blog</a>
+                <a class="footer-link" href="#">Blog</a>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>
