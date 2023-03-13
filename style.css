@@ -256,6 +256,7 @@ a {
     margin-top: 45px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -475,6 +476,7 @@ a {
 .recommended-offers-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 60px;
 }
 
