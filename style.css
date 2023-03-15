@@ -139,13 +139,14 @@ a {
 .choice-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     background-color: #FFFFFF;
     margin-left: 100px;
     margin-top: -60px;
     border-radius: 40px;
     padding-right: 180px;
     margin-right: 50px;
-    height: 220px;
+    height: 70%;
     padding-left: 70px;
 }
 
@@ -199,7 +200,7 @@ a {
 }
 
 .search-icon {
-    height: 70px;
+    height: 60%;
 }
 
 
@@ -371,6 +372,11 @@ a {
     padding-left: 150px;
     padding-top: 200px;
     display: flex;
+    flex-wrap: wrap;
+}
+
+.adv-details {
+    width: 50%;
 }
 
 .info-photo {
@@ -399,6 +405,11 @@ a {
     font-weight: 300;
 }
 
+/* .recommended-img {
+    border-radius: 25px;
+    box-shadow: 11px 11px 10px rgba(0, 0, 0, 0.35);
+} */
+
 .info-1 {
     margin-bottom: -140px;
 }
@@ -415,7 +426,8 @@ a {
 .text-adv {
     margin-top: 50px;
     margin-left: 60px;
-    margin-right: 130px;
+    /* margin-right: 130px; */
+    width: 40%;
 }
 
 .info-title {
@@ -484,6 +496,7 @@ a {
 
 .rec-offer {
     background-color: #FFFFFF;
+    box-shadow: 11px 11px 10px rgba(0, 0, 0, 0.35);
     padding: 10px;
     border-radius: 25px;
     padding-bottom: 0px;
@@ -530,12 +543,13 @@ a {
 .response-blocks-container {
     margin-top: 330px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     
 }
 
 .response {
-    height: 410px;
+    height: ;
     width: 45%;
     background-color: #FFFFFF;
     text-align: center;
@@ -612,6 +626,8 @@ a {
 
 footer {
     margin-top: 135px;
+    /* display: flex;
+    flex-wrap: wrap; */
 }
 
 .register-container {
